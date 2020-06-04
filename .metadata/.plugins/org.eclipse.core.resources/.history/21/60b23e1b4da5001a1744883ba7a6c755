@@ -1,0 +1,74 @@
+import java.util.*;
+class node
+{
+	int data;
+	node next;
+	public node(int d)
+	{
+		data=d;
+		next=null;
+	}
+	
+}
+class Linkedlist_implementation
+{
+	node head;
+	Scanner sc=new Scanner(System.in);
+	public void create_list()
+	{
+		int data_to_insert;
+		System.out.println("enter data to be inserted");
+		data_to_insert=sc.nextInt();
+		node insert_data=new node(data_to_insert);
+		if(head==null)
+		{
+			head=insert_data;
+		}
+		else{
+			node temp=head;
+			while(temp.next!=null)
+			{
+				temp=temp.next;
+			}
+			temp.next=insert_data;
+		}
+	}
+	
+	public void display_list(){
+		node temp=head;
+		System.out.println("list is:");
+		while(temp!=null)
+		{
+			System.out.print(temp.data+" ");
+			temp=temp.next;
+		}
+	}
+}
+public class Linkedlist {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Linkedlist_implementation l1=new Linkedlist_implementation();
+Scanner sc=new Scanner(System.in);
+int choice;
+int ans;
+do{
+	System.out.println("enter choice\n1insert data\n2display data");
+	choice=sc.nextInt();
+	switch(choice)
+	{
+	case 1:l1.create_list();
+	break;
+	case 2:l1.display_list();
+	break;
+	}
+	
+	System.out.println("\ndo you want to continue operations on list\n1yes\n2no");
+	ans=sc.nextInt();
+}while(ans==1);
+	}
+
+}

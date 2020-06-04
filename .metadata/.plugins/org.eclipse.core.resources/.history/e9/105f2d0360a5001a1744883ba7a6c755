@@ -1,0 +1,91 @@
+import java.util.Scanner;
+class stack{
+	int MAX=10;
+	int stack_array[]=new int[MAX];
+	int top=-1;
+	public int is_stack_full()
+	{
+		if(top==(MAX-1))
+		{
+			return 1;
+		}
+		return 0;
+	}
+	public int is_empty()
+	{
+		if(top==-1)
+		{
+			return 1;
+		}
+		return 0;
+	}
+	public void push(int data)
+	{
+		if(is_stack_full()!=1)
+		{
+			if(top==-1)
+			{
+				top++;
+				stack_array[top++]=data;
+			}
+			else{
+				stack_array[top++]=data;
+			}
+		}
+		else{
+			System.out.println("stack is full can't push the data");
+		}
+	}
+	public int pop()
+	{
+		if(is_empty()!=1)
+		{
+			
+			
+			return stack_array[--top];
+		}
+		else{
+			return -1;
+		}
+	}
+	public void display_stack()
+	{
+		for(int i=top-1;i>=0;i--)
+		{
+			System.out.println(stack_array[i]);
+		}
+	}
+}
+public class Stack_implementation {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+stack s=new stack();
+int choice;
+int ans;
+Scanner sc=new Scanner(System.in);
+do{
+	System.out.println("enter choice\n1push data\n2pop data\n3display stack");
+	choice=sc.nextInt();
+	switch(choice)
+	{
+	
+	case 1:System.out.println("enter data to be pushed on stack");
+	int data_pushed=sc.nextInt();
+		s.push(data_pushed);
+	break;
+	case 2:int popped_data=s.pop();
+	System.out.println("popped data is:"+popped_data);
+	break;
+	case 3:s.display_stack();
+	break;
+	}
+	System.out.println("do you want to continue stack operations\n1yes\n2no");
+	 ans=sc.nextInt();
+}while(ans==1);
+	}
+
+}

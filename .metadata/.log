@@ -1,0 +1,658 @@
+!SESSION 2020-06-03 03:14:11.966 -----------------------------------------------
+eclipse.buildId=M20060921-0945
+java.version=1.5.0_08
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -data D:\Users\Shivani\workspace\internship -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui.intro 4 0 2020-06-03 03:14:20.142
+!MESSAGE Failed to load resource: javascript/common.js from Welcome Framework
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.intro.impl.model.util.BundleUtil.toExternalForm(BundleUtil.java:274)
+	at org.eclipse.ui.internal.intro.impl.model.util.BundleUtil.getResolvedResourceLocation(BundleUtil.java:196)
+	at org.eclipse.ui.internal.intro.impl.model.util.BundleUtil.getResolvedResourceLocation(BundleUtil.java:116)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateJavascriptElement(IntroHTMLGenerator.java:186)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHeadElement(IntroHTMLGenerator.java:148)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLElement(IntroHTMLGenerator.java:99)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLforPage(IntroHTMLGenerator.java:67)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.generateDynamicContentForPage(BrowserIntroPartImplementation.java:207)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.dynamicStandbyStateChanged(BrowserIntroPartImplementation.java:445)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.doStandbyStateChanged(BrowserIntroPartImplementation.java:652)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroPartImplementation.standbyStateChanged(AbstractIntroPartImplementation.java:249)
+	at org.eclipse.ui.internal.intro.impl.model.IntroPartPresentation.standbyStateChanged(IntroPartPresentation.java:439)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.standbyStateChanged(CustomizableIntroPart.java:264)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart$2.run(ViewIntroAdapterPart.java:74)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.setStandby(ViewIntroAdapterPart.java:70)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart$1.propertyChanged(ViewIntroAdapterPart.java:55)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireInternalPropertyChange(WorkbenchPartReference.java:346)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireZoomChange(WorkbenchPartReference.java:511)
+	at org.eclipse.ui.internal.PartPane.setZoomed(PartPane.java:333)
+	at org.eclipse.ui.internal.PartStack.setZoomed(PartStack.java:1233)
+	at org.eclipse.ui.internal.PartSashContainer.zoomIn(PartSashContainer.java:879)
+	at org.eclipse.ui.internal.PartSashContainer.childRequestZoomIn(PartSashContainer.java:900)
+	at org.eclipse.ui.internal.LayoutPart.requestZoomIn(LayoutPart.java:354)
+	at org.eclipse.ui.internal.PartStack.childRequestZoomIn(PartStack.java:1183)
+	at org.eclipse.ui.internal.LayoutPart.requestZoomIn(LayoutPart.java:354)
+	at org.eclipse.ui.internal.PerspectiveHelper.zoomIn(PerspectiveHelper.java:1315)
+	at org.eclipse.ui.internal.WorkbenchPage.setState(WorkbenchPage.java:3617)
+	at org.eclipse.ui.internal.WorkbenchPage.toggleZoom(WorkbenchPage.java:3678)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:135)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:172)
+	at org.eclipse.ui.internal.ide.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:424)
+	at org.eclipse.ui.internal.WorkbenchWindow.open(WorkbenchWindow.java:676)
+	at org.eclipse.ui.internal.Workbench.busyOpenWorkbenchWindow(Workbench.java:819)
+	at org.eclipse.ui.internal.Workbench.doOpenFirstTimeWindow(Workbench.java:1453)
+	at org.eclipse.ui.internal.Workbench.access$10(Workbench.java:1451)
+	at org.eclipse.ui.internal.Workbench$17.run(Workbench.java:1415)
+	at org.eclipse.ui.internal.Workbench.runStartupWithProgress(Workbench.java:1437)
+	at org.eclipse.ui.internal.Workbench.openFirstTimeWindow(Workbench.java:1413)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.openFirstTimeWindow(WorkbenchConfigurer.java:190)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:708)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1101)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1863)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.154
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\css_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.342
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\forms_lists_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.437
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\htmlform_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.503
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.575
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\javascript_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.711
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\jsf_f_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.804
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\jsf_h_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:26.954
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_bean_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:27.079
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:27.206
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_logic_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2020-06-03 03:14:27.277
+!MESSAGE Installed snippet library: C:\Program Files (x86)\MyEclipse 5.1.1 GA\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_5.1.1\snippets\struts_tiles_snippets.xml
+
+!ENTRY org.eclipse.ui.intro 4 0 2020-06-03 03:14:31.139
+!MESSAGE Failed to load resource: javascript/common.js from Welcome Framework
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.intro.impl.model.util.BundleUtil.toExternalForm(BundleUtil.java:274)
+	at org.eclipse.ui.internal.intro.impl.model.util.BundleUtil.getResolvedResourceLocation(BundleUtil.java:196)
+	at org.eclipse.ui.internal.intro.impl.model.util.BundleUtil.getResolvedResourceLocation(BundleUtil.java:116)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateJavascriptElement(IntroHTMLGenerator.java:186)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHeadElement(IntroHTMLGenerator.java:148)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLElement(IntroHTMLGenerator.java:99)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLforPage(IntroHTMLGenerator.java:67)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.generateDynamicContentForPage(BrowserIntroPartImplementation.java:207)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.dynamicStandbyStateChanged(BrowserIntroPartImplementation.java:438)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.doStandbyStateChanged(BrowserIntroPartImplementation.java:652)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroPartImplementation.standbyStateChanged(AbstractIntroPartImplementation.java:249)
+	at org.eclipse.ui.internal.intro.impl.model.IntroPartPresentation.standbyStateChanged(IntroPartPresentation.java:439)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.standbyStateChanged(CustomizableIntroPart.java:264)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart$2.run(ViewIntroAdapterPart.java:74)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.setStandby(ViewIntroAdapterPart.java:70)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart$1.propertyChanged(ViewIntroAdapterPart.java:55)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireInternalPropertyChange(WorkbenchPartReference.java:346)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireZoomChange(WorkbenchPartReference.java:511)
+	at org.eclipse.ui.internal.PartPane.setZoomed(PartPane.java:333)
+	at org.eclipse.ui.internal.PartStack.setZoomed(PartStack.java:1233)
+	at org.eclipse.ui.internal.PartSashContainer.zoomOut(PartSashContainer.java:971)
+	at org.eclipse.ui.internal.PartSashContainer.childRequestZoomOut(PartSashContainer.java:919)
+	at org.eclipse.ui.internal.LayoutPart.requestZoomOut(LayoutPart.java:347)
+	at org.eclipse.ui.internal.PerspectiveHelper.zoomOut(PerspectiveHelper.java:1327)
+	at org.eclipse.ui.internal.WorkbenchPage.zoomOut(WorkbenchPage.java:3718)
+	at org.eclipse.ui.internal.WorkbenchPage.zoomOutIfNecessary(WorkbenchPage.java:3731)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:579)
+	at org.eclipse.ui.internal.WorkbenchPage.makeActive(WorkbenchPage.java:1150)
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivePart(WorkbenchPage.java:1130)
+	at org.eclipse.ui.internal.WorkbenchPage.hideView(WorkbenchPage.java:2201)
+	at org.eclipse.ui.internal.ViewPane.doHide(ViewPane.java:213)
+	at org.eclipse.ui.internal.PartStack.close(PartStack.java:499)
+	at org.eclipse.ui.internal.PartStack.close(PartStack.java:482)
+	at org.eclipse.ui.internal.PartStack$1.close(PartStack.java:106)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:81)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:267)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:276)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder.access$1(DefaultTabFolder.java:1)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder$1.closeButtonPressed(DefaultTabFolder.java:67)
+	at org.eclipse.ui.internal.presentations.PaneFolder.notifyCloseListeners(PaneFolder.java:580)
+	at org.eclipse.ui.internal.presentations.PaneFolder$3.close(PaneFolder.java:187)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:2107)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:292)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.jst.jsf.core 1 0 2020-06-03 03:15:28.450
+!MESSAGE Could not load JSF Library Registry; creating new registry
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:18:50.491
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:18:50.491
+!MESSAGE Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:18:56.060
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:18:56.060
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:21:34.132
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:21:34.133
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:25:28.211
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:25:28.212
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:25:50.116
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:25:50.117
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:27:30.674
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:27:30.674
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:28:23.789
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:28:23.789
+!MESSAGE Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:29:50.388
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:29:50.388
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 03:46:28.858
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 03:46:28.858
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 04:35:36.357
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 04:35:36.357
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:02:18.569
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:02:18.569
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:07:26.978
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:07:26.978
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:37:09.690
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:37:09.690
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:41:16.206
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:41:16.206
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:41:52.694
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:41:52.694
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:43:16.812
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:43:16.812
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:44:30.192
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:44:30.192
+!MESSAGE Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:45:26.779
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:45:26.780
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:49:03.004
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:49:03.004
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 05:53:57.154
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 05:53:57.154
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:03:44.016
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:03:44.016
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:22:09.017
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:22:09.017
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:23:06.467
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:23:06.467
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:25:12.265
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:25:12.265
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:27:09.246
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:27:09.246
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:28:32.075
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:28:32.075
+!MESSAGE Unknown javadoc format for in [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:29:20.263
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:29:20.263
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:30:36.688
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:30:36.688
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:49:56.625
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:49:56.626
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 06:53:31.917
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 06:53:31.917
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 07:05:12.132
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 07:05:12.132
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-03 07:05:46.283
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]]
+	at org.eclipse.jdt.internal.core.BinaryField.getAttachedJavadoc(BinaryField.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:458)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2020-06-03 07:05:46.283
+!MESSAGE Unknown javadoc format for out [in System [in System.class [in java.lang [in C:\Program Files (x86)\MyEclipse 5.1.1 GA\jre\lib\rt.jar]]]]
